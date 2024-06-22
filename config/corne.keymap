@@ -37,10 +37,10 @@
 
             display-name = "Lower";
             bindings = <
-&trans  &kp DOLLAR     &kp LEFT_PARENTHESIS  &none   &kp RIGHT_PARENTHESIS  &kp EXCLAMATION    &kp AT_SIGN  &none     &none   &none      &kp HASH      &trans
-&trans  &kp AMPERSAND  &kp LEFT_BRACE        &none   &kp RIGHT_BRACE        &kp TILDE          &kp LEFT     &kp DOWN  &kp UP  &kp RIGHT  &kp CARET     &trans
-&trans  &kp PERCENT    &kp LEFT_BRACKET      &trans  &kp RIGHT_BRACKET      &kp GRAVE          &trans       &trans    &trans  &trans     &kp ASTERISK  &trans
-                                             &trans  &kp LS(LEFT_ALT)       &trans             &trans       &trans    &trans
+&trans  &kp DOLLAR     &kp LEFT_PARENTHESIS  &kp HASH      &kp RIGHT_PARENTHESIS  &kp EXCLAMATION    &kp AT_SIGN  &kp N7    &kp N8  &none      &kp HASH      &trans
+&trans  &kp AMPERSAND  &kp LEFT_BRACE        &kp CARET     &kp RIGHT_BRACE        &kp TILDE          &kp LEFT     &kp DOWN  &kp UP  &kp RIGHT  &kp CARET     &trans
+&trans  &kp PERCENT    &kp LEFT_BRACKET      &kp ASTERISK  &kp RIGHT_BRACKET      &kp GRAVE          &trans       &trans    &trans  &trans     &kp ASTERISK  &trans
+                                             &trans        &kp LS(LEFT_ALT)       &trans             &trans       &trans    &trans
             >;
         };
 
