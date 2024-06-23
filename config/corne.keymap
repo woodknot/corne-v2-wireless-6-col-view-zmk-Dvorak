@@ -55,19 +55,21 @@
             display-name = "arrows";
             bindings = <
 &trans  &none   &none   &none   &none               &none     &none           &none     &none         &none            &none  &trans
-&trans  &trans  &trans  &trans  &to 3               &trans    &kp LEFT_ARROW  &kp DOWN  &kp UP_ARROW  &kp RIGHT_ARROW  &none  &trans
+&trans  &trans  &trans  &trans  &tog 3              &trans    &kp LEFT_ARROW  &kp DOWN  &kp UP_ARROW  &kp RIGHT_ARROW  &none  &trans
 &trans  &trans  &trans  &trans  &trans              &trans    &none           &none     &none         &none            &none  &trans
                         &trans  &kp LA(LEFT_SHIFT)  &trans    &trans          &trans    &trans
             >;
         };
 
-        Bluetooth {
+        bluetooth {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &bt BT_CLR  &trans      &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans      &bt BT_NXT  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans      &trans      &trans  &trans  &trans  &trans
                         &trans  &trans  &trans    &trans      &trans      &trans
             >;
+
+            label = "bluetooth";
         };
     };
 };
