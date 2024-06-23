@@ -56,7 +56,7 @@
             bindings = <
 &trans  &none   &none   &none   &none               &none     &none           &none     &none         &none            &none  &trans
 &trans  &trans  &trans  &trans  &tog 3              &trans    &kp LEFT_ARROW  &kp DOWN  &kp UP_ARROW  &kp RIGHT_ARROW  &none  &trans
-&trans  &trans  &trans  &trans  &trans              &trans    &none           &none     &none         &none            &none  &trans
+&trans  &trans  &trans  &trans  &trans              &trans    &kp F5          &kp F6    &kp F7        &kp F8           &none  &trans
                         &trans  &kp LA(LEFT_SHIFT)  &trans    &trans          &trans    &trans
             >;
         };
