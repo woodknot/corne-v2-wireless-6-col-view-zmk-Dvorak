@@ -4,10 +4,11 @@
  * SPDX-License-Identifier: MIT
  */
 
+#include <dt-bindings/zmk/mouse.h>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/mouse.h>
+#include <dt-bindings/zmk/pointing.h>
 
 / {
     keymap {
@@ -23,9 +24,18 @@
             display-name = "Base";
             bindings = <
 &kp BACKSLASH   &kp Q  &kp W  &kp E        &kp R         &kp T             &kp Y    &kp U      &kp I                &kp O    &kp P     &kp BSPC
-&kp TAB         &kp A  &kp S  &kp D        &lt 1 F       &kp G             &kp H    &kp J      &kp K                &kp L    &kp SEMI  &kp SQT
-&kp UNDERSCORE  &kp Z  &kp X  &kp C        &kp V         &kp B             &kp N    &lt 1 M    &kp COMMA            &kp DOT  &kp FSLH  &kp PLUS
-                              &lt 2 MINUS  &kp LEFT_ALT  &kp LEFT_SHIFT    &kp RET  &kp SPACE  &mt RIGHT_ALT EQUAL
+&kp TAB         &kp A  &kp S  &kp D        &lt 2 F       &kp G             &kp H    &kp J      &kp K                &kp L    &kp SEMI  &kp SQT
+&kp UNDERSCORE  &kp Z  &kp X  &mt LCTRL C  &kp V         &kp B             &kp N    &lt 2 M    &mt LCTRL COMMA      &kp DOT  &kp FSLH  &kp PLUS
+                              &lt 3 MINUS  &kp LEFT_ALT  &kp LEFT_SHIFT    &kp RET  &kp SPACE  &mt RIGHT_ALT EQUAL
+            >;
+        };
+
+        mac {
+            bindings = <
+&trans  &trans  &trans  &trans       &trans            &trans            &trans  &trans  &trans                               &trans  &trans  &trans
+&trans  &trans  &trans  &trans       &trans            &trans            &trans  &trans  &trans                               &trans  &trans  &trans
+&trans  &trans  &trans  &mt LCTRL C  &trans            &trans            &trans  &trans  &trans                               &trans  &trans  &trans
+                        &lt 3 MINUS  &kp LEFT_COMMAND  &kp LEFT_SHIFT    &trans  &trans  &mt RG(LC(LA(RIGHT_COMMAND))) EQUAL
             >;
         };
 
@@ -57,7 +67,7 @@
 &trans  &none   &none   &none   &none               &none     &none           &kp LEFT_WIN  &none         &none            &none  &trans
 &trans  &trans  &trans  &trans  &trans              &trans    &kp LEFT_ARROW  &kp DOWN      &kp UP_ARROW  &kp RIGHT_ARROW  &none  &trans
 &trans  &trans  &trans  &trans  &trans              &trans    &kp F5          &kp F6        &kp F7        &kp F8           &none  &trans
-                        &trans  &kp LA(LEFT_SHIFT)  &mo 3     &trans          &trans        &trans
+                        &trans  &kp LA(LEFT_SHIFT)  &mo 4     &trans          &trans        &trans
             >;
         };
 
