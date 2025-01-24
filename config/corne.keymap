@@ -11,6 +11,28 @@
 #include <dt-bindings/zmk/pointing.h>
 
 / {
+    behaviors {
+        faster_modtap: faster_modtap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "FASTER_MODTAP";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "balanced";
+        };
+
+        faster_layer: faster_layer {
+            compatible = "zmk,behavior-hold-tap";
+            label = "FASTER_LAYER";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "balanced";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -23,10 +45,10 @@
 
             display-name = "Base";
             bindings = <
-&kp BACKSLASH   &kp Q  &kp W  &kp E        &kp R         &kp T             &kp Y    &kp U      &kp I                &kp O    &kp P     &kp BSPC
-&kp TAB         &kp A  &kp S  &kp D        &lt 2 F       &kp G             &kp H    &kp J      &kp K                &kp L    &kp SEMI  &kp SQT
-&kp UNDERSCORE  &kp Z  &kp X  &mt LCTRL C  &kp V         &kp B             &kp N    &lt 2 M    &mt LCTRL COMMA      &kp DOT  &kp FSLH  &kp PLUS
-                              &lt 3 MINUS  &kp LEFT_ALT  &kp LEFT_SHIFT    &kp RET  &kp SPACE  &mt RIGHT_ALT EQUAL
+&kp BACKSLASH   &kp Q  &kp W  &kp E                  &kp R         &kp T             &kp Y    &kp U      &kp I                &kp O    &kp P     &kp BSPC
+&kp TAB         &kp A  &kp S  &kp D                  &lt 2 F       &kp G             &kp H    &kp J      &kp K                &kp L    &kp SEMI  &kp SQT
+&kp UNDERSCORE  &kp Z  &kp X  &mt LCTRL C            &kp V         &kp B             &kp N    &lt 2 M    &mt LCTRL COMMA      &kp DOT  &kp FSLH  &kp PLUS
+                              &faster_layer 3 MINUS  &kp LEFT_ALT  &kp LEFT_SHIFT    &kp RET  &kp SPACE  &mt RIGHT_ALT EQUAL
             >;
         };
 
