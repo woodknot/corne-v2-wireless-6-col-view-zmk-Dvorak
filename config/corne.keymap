@@ -12,9 +12,9 @@
 
 / {
     behaviors {
-        faster_modtap: faster_modtap {
+        faster_mt: faster_mt {
             compatible = "zmk,behavior-hold-tap";
-            label = "FASTER_MODTAP";
+            label = "FASTER_MT";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
@@ -22,9 +22,9 @@
             flavor = "balanced";
         };
 
-        faster_layer: faster_layer {
+        faster_lt: faster_lt {
             compatible = "zmk,behavior-hold-tap";
-            label = "FASTER_LAYER";
+            label = "FASTER_LT";
             bindings = <&mo>, <&kp>;
 
             #binding-cells = <2>;
@@ -45,10 +45,10 @@
 
             display-name = "Base";
             bindings = <
-&kp BACKSLASH   &kp Q  &kp W  &kp E                           &kp R                   &kp T             &kp Y    &kp U              &kp I                           &kp O    &kp P     &kp BSPC
-&kp TAB         &kp A  &kp S  &kp D                           &faster_layer 2 F       &kp G             &kp H    &kp J              &kp K                           &kp L    &kp SEMI  &kp SQT
-&kp UNDERSCORE  &kp Z  &kp X  &faster_modtap RIGHT_COMMAND C  &faster_modtap LCTRL V  &kp B             &kp N    &faster_layer 2 M  &faster_modtap LCTRL COMMA      &kp DOT  &kp FSLH  &kp PLUS
-                              &faster_layer 3 MINUS           &kp LEFT_ALT            &kp LEFT_SHIFT    &kp RET  &kp SPACE          &faster_modtap RIGHT_ALT EQUAL
+&kp BACKSLASH   &kp Q  &kp W  &kp E                       &kp R               &kp T             &kp Y    &kp U           &kp I                       &kp O    &kp P     &kp BSPC
+&kp TAB         &kp A  &kp S  &kp D                       &faster_lt 2 F      &kp G             &kp H    &kp J           &kp K                       &kp L    &kp SEMI  &kp SQT
+&kp UNDERSCORE  &kp Z  &kp X  &faster_mt RIGHT_COMMAND C  &faster_mt LCTRL V  &kp B             &kp N    &faster_lt 2 M  &faster_mt LCTRL COMMA      &kp DOT  &kp FSLH  &kp PLUS
+                              &faster_lt 3 MINUS          &kp LEFT_ALT        &kp LEFT_SHIFT    &kp RET  &kp SPACE       &faster_mt RIGHT_ALT EQUAL
             >;
         };
 
