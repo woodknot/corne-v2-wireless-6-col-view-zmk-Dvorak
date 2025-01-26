@@ -54,10 +54,10 @@
 
         mac {
             bindings = <
-&trans  &trans  &trans  &trans                 &trans            &trans            &trans  &trans  &trans                               &trans  &trans  &trans
-&trans  &trans  &trans  &trans                 &trans            &trans            &trans  &trans  &trans                               &trans  &trans  &trans
-&trans  &trans  &trans  &faster_mt LEFT_ALT C  &trans            &trans            &trans  &trans  &trans                               &trans  &trans  &trans
-                        &lt 3 MINUS            &kp LEFT_COMMAND  &kp LEFT_SHIFT    &trans  &trans  &mt RG(LC(LA(RIGHT_COMMAND))) EQUAL
+&trans  &trans  &trans  &trans                 &trans            &trans    &trans  &trans  &trans                                      &trans  &trans  &trans
+&trans  &trans  &trans  &trans                 &trans            &trans    &trans  &trans  &trans                                      &trans  &trans  &trans
+&trans  &trans  &trans  &faster_mt LEFT_ALT C  &trans            &trans    &trans  &trans  &trans                                      &trans  &trans  &trans
+                        &trans                 &kp LEFT_COMMAND  &trans    &trans  &trans  &faster_mt RG(LC(LA(RIGHT_COMMAND))) EQUAL
             >;
         };
 
